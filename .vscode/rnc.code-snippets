@@ -1,0 +1,23 @@
+{
+  "rrr": {
+    "prefix": "rrr",
+    "body": [
+      "import { classNames as cn } from \"shared/lib/classNames/classNames\";",
+      "import styles from \"./${1:${TM_FILENAME_BASE}}.module.scss\";",
+      "",
+      "export interface ${1}Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const ${1} = ({ className }: ${1}Props) => {",
+      "  return (",
+      "    <div className={cn(styles.${1/(^.)/${1:/downcase}/}, {}, [className])}>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      ""
+    ],
+    "description": "new react component"
+  }
+}
