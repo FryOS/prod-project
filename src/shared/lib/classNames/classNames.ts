@@ -1,4 +1,4 @@
-type Mods = Record<string, string | string>;
+type Mods = Record<string, Boolean | string>;
 
 export function classNames(cls:string , mods: Mods = {}, additional:string[] = []): string {
     return [
